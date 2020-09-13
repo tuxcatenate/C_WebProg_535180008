@@ -1,0 +1,168 @@
+body {
+    font-family: Arial;
+    margin: 0;
+
+}
+
+#h1 {
+    color: navy;
+    margin-left: 10px;
+    background-color:dodgerblue;
+    border-left: 6px solid darkolivegreen;
+}
+#h1header {
+    font-family: Roboto;
+    text-align: left;
+}
+#h1content {
+    border-left: 6px solid sandybrown; 
+    background-color: #f5f6fa; 
+    font-family: ChunkFive; 
+    color:peru; 
+    padding-left: 3%;
+    margin-top: auto;
+}
+.imgalign {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+.column {
+    flex: 33.33%;
+    padding: 1px;
+
+}
+
+.profile-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.single-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    background-color: #f1c40f;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transform: .3s;
+    /*box-shadow: 0px 0px 5px #000;*/ 
+}
+.img-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 6px solid #ddd;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 20px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+.single-box:nth-child(1) .img-area{
+    background-image: url("/img/me.jpg");
+}
+.single-box:nth-child(2) .img-area{
+    background-image:url("/img/user.png") ;
+}
+
+.header-text{
+    font-size: 24px;
+    color: ivory;
+    font-weight: 500;
+    line-height: 48px;
+}
+.img-text {
+    font-family: 'BebasNeue';
+    color: ivory;
+    padding-top: 20px;
+}
+
+.img-text p{
+    color: ivory;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.single-box:hover {
+    background: #d2dae2;
+    color:  #22a6b3;
+}
+
+#container {
+    background-color: #e74c3c;
+    height: 100%;
+    padding-bottom: 150px;
+    animation: 20000ms ease-in-out infinite animate;
+}
+
+@keyframes animate {
+    0% {
+        background-color: #45a3e5
+    }
+
+    30% {
+        background-color: #eccc68
+    }
+
+    60% {
+        background-color: #eb670f
+    }
+
+    90% {
+        background-color: #f35
+    }
+
+    100% {
+        background-color: #7bed9f
+    }
+}
+/*Mengadopsi tema flat & material */
+@font-face {
+    font-family: ChunkFive;
+    src: url("/fonts/ChunkfiveEx.ttf"); /* Must be placed in same directory */
+    /*ChunkFive Ex font dari dafont.com, author credit to : Peter Wiegel */
+}
+@font-face {
+    font-family: Roboto; /*Roboto Font obtained from dafont.com, credit to Google android Design as creator of the font. */
+    src: url("/fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url("/fonts/BebasNeue-Regular.ttf"); /*obtained from dafont*/
+}
+
+.header {
+    padding: 15px;
+    border-bottom: 10px solid lightcoral;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    opacity: 0.7;
+    font-size: 30px;
+    margin: auto;
+    overflow: auto;
+}
+
+img {
+    display: inline-block; 
+    margin: auto;
+}
+
+#pg1 {
+    color: burlywood;
+}
+
