@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout Float & Clear</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body class="bg-bab8">
+    <h2>CSS Layout Float & Clear</h2>
+
+    <br />
+
+    <p>
+        Jika Kita sering melakukan penempatan gambar pada sebuah teks dalam ms word maka terkadang sebuah gambar ditempatkan seolah - oleh berada pada lapisan atas sebuah paragraf tertentu.
+        Properti CSS float menentukan bagaimana sebuah elemen harus mengapung (float pada layout tertentu) sehingga tampilan seolah - olah berada pada lapisan atasnya.
+        Properti CSS clear menentukan elemen apa yang dapat mengapung (float) di samping elemen yang dibersihkan dan di sisi mana.
+    </p>
+
+    <h3>8.1 Properti Float</h3>
+    <img src="img.JPG">
+
+    <h3>8.2 Properti Clear</h3>
+    <p>
+        Properti menentukan elemen apa yang bisa mengapung di samping elemen yang clear kan dan di sisi mana.
+        Properti dapat memiliki salah satu nilai berikut: 
+    </p>
+    <ul>
+        <li>none - Memungkinkan elemen mengambang di kedua sisi. Ini default</li>
+        <li>kiri - Elemen mengambang tidak diperbolehkan di sisi kiri</li>
+        <li>kanan- Tidak ada elemen mengambang yang diizinkan di sisi kanan</li>
+        <li>keduanya - Tidak ada elemen mengambang yang diizinkan di sisi kiri atau kanan</li>
+        <li>inherit - Elemen mewarisi nilai yang jelas dari induknya</li>
+    </ul>
+    <p>
+        Cara paling umum untuk menggunakan properti clear adalah setelah Anda menggunakan properti float pada sebuah elemen.
+        Saat membersihkan float, Anda harus mencocokkan yang jelas dengan floating-nya: Jika elemen di float kan ke kiri, maka Anda harus jelas ke kiri. Elemen float Anda akan terus mengambang, tetapi elemen yang telah clear-kan akan muncul di bawahnya pada halaman web.
+    </p>
+    <p>
+        Jika sebuah elemen lebih tinggi dari elemen yang memuatnya, dan itu floatingkan, itu akan "overflow" di luar penampungnya. Kemudian kita bisa menambahkan overflow: auto; ke elemen yang mengandung untuk memperbaiki masalah ini.
+    </p>
+</body>
+</html>

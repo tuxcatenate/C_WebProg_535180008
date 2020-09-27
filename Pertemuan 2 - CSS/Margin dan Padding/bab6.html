@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin dan Padding</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body class="bg-bab6">
+    <h2>Margin dan Padding</h2>
+
+    <br />
+
+    <p>
+        Pengaturan margin dan padding yang baik dapat membuat dokumen HTML terlihat lebih rapih dan profesional. Dengan menggunakan CSS Kita bisa mengaturnya sesuai dengan keinginan.
+    </p>
+
+    <h3>6.1 Properti Padding</h3>
+    <p>
+        Properti padding memungkinkan Kita menentukan berapa banyak ruang yang harus muncul antara konten elemen dan border.
+        Nilai properti ini paling sering ditentukan dalam piksel. Meskipun, itu dapat menggunakan salah satu unit panjang yang Kita temui sebelumnya, persentase, atau kata yang diwarisi (inherit).
+        Padding suatu elemen tidak mewarisi secara default, jadi jika elemen <-body> memiliki properti padding dengan nilai 50 piksel, ini tidak secara otomatis berlaku untuk semua elemen lain di dalamnya. Jika nilai inherit diterapkan ke elemen apa pun, hanya dengan demikian mereka dapat memiliki padding yang sama dengan elemen induknya.
+        Jika persentase digunakan, persentase kotak berisi, dan jika nilai 10 persen ditentukan, akan ada 5 persen dari masing-masing sisi kotak sebagai padding.
+        Kita dapat menentukan jumlah padding yang berbeda di dalam setiap sisi kotak menggunakan properti berikut:
+    </p>
+    <ul>
+        <li>padding-bottom</li>
+        <li>padding-top</li>
+        <li>padding-left</li>
+        <li>padding-right</li> 
+    </ul>
+    <p>
+        Atribut padding sangat membantu untuk membuat ruang putih (white space) antara konten elemen dan setiap perbatasan yang dimilikinya. 
+    </p>
+    <p>
+        Terkadang, suatu elemen mungkin tidak memiliki border yang terlihat, tetapi memiliki warna atau pola latar belakang. Dalam kasus seperti itu, berikan padding pada beberapa kotak dapat membantu membuat desain Kita lebih menarik.
+    </p>
+
+    <h3>6.2 Properti margin</h3>
+    <p>
+        Properti margin mengontrol celah antara kotak, dan nilainya panjang menggunakan angka, persentase, atau warisan (inherit), yang masing-masing memiliki arti yang persis sama seperti yang terjadi pada properti padding yang baru saja Kita lihat.
+        Seperti halnya properti padding, nilai properti margin tidak diwarisi oleh elemen turunan kecuali Anda menggunakan nilai inherit.
+        Juga, ingatlah bahwa ketika satu kotak berada di atas kotak yang lain, hanya yang lebih besar dari dua margin yang ditampilkan (atau jika keduanya sama, ukuran satu margin).
+        Kita juga dapat mengatur nilai yang berbeda untuk margin di setiap sisi kotak menggunakan properti berikut:
+    </p>
+    <ul>
+        <li>margin-bottom</li>
+        <li>margin-top</li>
+        <li>margin-left</li>
+        <li>margin-right</li> 
+    </ul>
+
+    <h3>6.3 Properti text-shadow</h3>
+    <p>
+        Property ini memberikan efek bayangan pada sebuah teks atau paragraf. Sering digunakan di media cetak. Nilai untuk propreti ini cukup rumit karena dapat mengambil warna diikuti 3 (tiga) nilai yang lainnya.
+        Dua nilai yang pertama menentukan seberapa jauh bayangan dari teks asli menggunakan koordinat X dan Y, nilai yang ketiga sebelum nillai warna adalah menentukan seberapa blur banyangan seharusnya, nilai terakhir adalah nilai warna pada umumnya sebuah css.
+    </p>
+    
+    <h3>6.4 Properti text-transform</h3>
+    <p>
+        Properti ini digunakan untuk mengubah teks pada suatu konten elemen. Baik menjadi capitalize, uppercase atau lowercase. Beberapa nilai yang dapat digunakan pada property ini adalah sebagai berikut :
+    </p>
+    <table>
+        <tr>
+            <th>Nilai</th>
+            <th>Kegunaan</th>
+        </tr>
+        <tr>
+            <td>none</td>
+            <td>tidak ada perubahan yang terjadi</td>
+        </tr>
+        <tr>
+            <td>capitalize</td>
+            <td>mengubah karakter huruf pertama menjadi kapital / hurus besar.</td>
+        </tr>
+        <tr>
+            <td>uppercase</td>
+            <td>membuat seluruh konten elemen huruf besar.</td>
+        </tr>
+        <tr>
+            <td>lowercase</td>
+            <td>membuat seluruh konten elemen huruf kecil.</td>
+        </tr>
+    </table>
+
+    <h3>6.5 Properti letter-spacing</h3>
+    <p>
+        Properti ini memungkinkan Anda untuk mengatur jarak antar karakter. Hal ini biasanya digunakan oleh seorang desainer cetak untuk mengatur jarak antar karakter tersebut. Jika Kita ingin menambah atau mengurangi jarak antar karakter, kemungkinan besar Kita menetukannya dalam pixel atau sesuatu yang dikenal dengan em. Meskipun satuan panjang lain yang didukung oleh CSS bisa digunakan).
+    </p>
+
+    <h3>6.6 Properti word-spacing</h3>
+    <p>
+        Pada properti ini Kita dapat mengatur jarak antar kata pada sebuah dokumen HTML. Penggunaannya sama seperti letter-spacing properti. 
+    </p>
+
+    <h3>Properti white-space</h3>
+    <p>
+        Properti ini mengontrol apakah white space (ruang putih pada editor) dipertahankan atau diabaikan. Ada beberapa nilai yang dapat digunakan pada properti white-space terkait penggunaan white space pada sebuah dokumen html.
+    </p>
+    <table>
+        <tr>
+            <th>nilai</th>
+            <th>kegunaan</th>
+        </tr>
+        <tr>
+            <td>normal</td>
+            <td>normal sesuai halaman web.</td>
+        </tr>
+        <tr>
+            <td>pre</td>
+            <td>mempertahankan white space seperti pada editor HTML.</td>
+        </tr>
+        <tr>
+            <td>pre-line</td>
+            <td>mempertahakan white space seperti pada editor HTML tetapi pada  value pre-line jarak setiap per-kata hanya akan menampilkan satu spasi seperti pada umumnya walaupun anda mengetikkan lebih dari satu spasi.dapat membuat baris baru jika diperlukan.</td>
+        </tr>
+        <tr>
+            <td>pre-wrap</td>
+            <td>mempertahakan white space seperti pada editor apabila baris teks akan mengalir keluar melebihi batas elemen ia akan membuat baris baru sehingga baris teks tetap berada di dalam area pembungkusnya.</td>
+        </tr>
+        <tr>
+            <td>nowarp</td>
+            <td>teks akan terus memanjang (tidak membuat baris baru untuk menyesuaikan tampilan di browser) jika tidak secara eksplisit menggunakan elemen <-br>.</td>
+        </tr>
+    </table>
+
+    <h3>6.8 Properti direction</h3>
+    <p>
+        Properti ini seperti elemen <-dir> pada HTML yaitu menentukan arah dinama teks harus mengalir. Berikut adalah properti dari direction :  
+    </p>
+    <table>
+        <tr>
+            <th>nilai</th>
+            <th>kegunaan</th>
+        </tr>
+        <tr>
+            <td>ltr</td>
+            <td>teks mengalir dari kiri ke kanan.</td>
+        </tr>
+        <tr>
+            <td>rtl</td>
+            <td>teks mengalir dari kanan ke kiri.</td>
+        </tr>
+        <tr>
+            <td>inherit</td>
+            <td>teks mengalir sesuai dengan arah dari elemen induk.</td>
+        </tr>
+    </table>
+</body>
+</html>

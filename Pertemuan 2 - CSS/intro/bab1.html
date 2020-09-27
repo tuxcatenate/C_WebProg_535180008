@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengenalan CSS</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body class="bg-bab1">
+    <h2>1. Pengenalan CSS</h2>
+
+    <br />
+    
+    <h3>1.1 Tentang CSS(Cascading Style Sheet)</h3>
+    <p>
+        CSS (Cascading Style Sheet) secara sederhana adalah sebuah metode 
+        yang digunakan untuk mempersingkat penulisan tag HTML, seperti font, 
+        color, text dan tabel menjadi lebih ringkas sehingga tidak terjadi 
+        pengulangan penulisan.
+    </p>
+    <p>
+        CSS digunakan untuk mengatur tampilan dokumen. Dengan adanya CSS, memungkinkan 
+        Kita untuk menampilkan halaman yag sama dengan format berbeda. 
+    </p>
+    <p>
+        CSS merupakan teknologi internet yang direkomendasikan oleh World Wide Web Consortium atau W3C pada tahun 1996.
+        Saat ini terdapat 3 versi CSS (CSS1, CSS2, CSS3) mayoritas property - property yang digunakan adalah CSS2 karena property 
+        CSS3 masih dapat berubah - ubah selama pengembangan.
+    </p>
+    
+    <h3>1.2 Kegunaan CSS</h3>
+    <p>
+        Beberapa kegunaan CSS diantaranya :  
+    </p>
+    <ol>
+        <li>Mempersingkat penulisan tag HTML - Penulisan tag dengan property dan nilai yang sama tidak perlu dituliskan pada setiap tag HTML.</li>
+        <li>Mempercepat proses rendering atau pembacaan HTML karena tidak terdapat pengulangan penulisan.</li>
+        <li>Mudah untuk memelihara (maintain) skrip : karena CSS dapat dibuat  terpisah maka tidak perlu merombak semua elemen atau property dalam HTML.</li>
+        <li>CSS dapat melakukan apa yang tidak bisa dilakukan oleh HTML seperti memberikan warna pada input box atau scrollbar.</li>
+    </ol>
+
+    <h3>1.3 Aturan Penulisan CSS</h3>
+    <p>CSS memiliki aturan dalam penulisannya, yang terdiri atas Selector dan Declaration.</p>
+    <ul>
+        <li>Selector : mengidikasikan elemen atau elemen - elemen yang akan di deklarasikan.</li>
+        <li>Declaration : untuk mendeskripsikan property dan nilai yang akan digunakan pada selector.</li>
+    </ul>
+    <p>
+        CSS Declaration yang berada didalam kurung kurawal terdiri dari 2 (dua) bagian property dan Value yang dipisahkan oleh tanda titik dua “ : ”. Kita dapat menentukan 
+        beberapa property dalam satu deklarasi, masing - masing dipisahkan dengan tanda titik koma “ ; “.
+    </p>
+    
+    <h3>1.4 Cara Penulisan CSS</h3>
+    <p>
+        Cara penulisan skrip CSS dibagi menjadi 3 (tiga) bagian, yaitu : 
+    </p>
+    <ol>
+        <li>
+            Inline Style Sheet
+            <p>
+                Penulisan skrip CSS didalam elemen HTML. Untuk metode ini fungsinya hamper sama dengan menuliskan property pada tag HTML, penggunaannya untuk hal - hal tertentu saja. Misalkan memberi warna hijau pada tag <-p> maka cara penulisannya sebagai berikut : 
+                   <p class="center"><-p style=”color:green”></p>
+                Penulisan skrip CSS dilakukan pada tag pembuka suatu element html. Property style akan men-support semua property yang di-support oleh CSS.
+            </p>
+        </li>
+        <li>
+            Embedded Style Sheet
+            <p>
+                Penulisan skrip CSS didalam dokumen HTML. Metode ini menggunakan tag <-style> dan <-/style>
+            </p>
+            <p>
+                Contoh : 
+                <p class="red"><-style type=”text/css><br />
+                p {color : red}
+                <-/style></p>
+                Biasanya penulisan skrip CSS ini dilakukan pada bagian elemen “head”.
+            </p>
+        </li>
+        <li>
+            <p>Penulisan skrip CSS di halaman yang berbeda atau terpisah dari HTML. Jadi, Kita tinggal melakukan link ke file CSS yang telah dibuat. Untuk metode ini, menggunakan tag <-link rel> yang ditempatkan pada bagian tag <-head>. Metode ini paling banyak digunakan dalam penulisan CSS. Linked style sheet merupakan metode penulisan yang paling banyak dipakai pada pengembangan website. 
+            Beberapa keuntungan menggunakan aturan style ini diantaranya :</p>
+            <ul>
+                <li>
+                    Menghemat Kita mengulangi aturan style yang sama di setiap halaman.
+                </li>
+                <li>
+                    Dapat mengubah tampilan beberapa halaman dengan mengubah hanya pada style sheet - nya saja daripada masing-masing halaman. Ini berarti lebih mudah untuk memperbarui website Anda jika Anda ingin, misalnya, mengubah gaya font yang digunakan dalam semua judul atau mengubah warna semua tautan.
+                </li>
+                <li>
+                    Setelah pengunjung ke situs Anda mengunduh CSS dengan halaman pertama situs Anda yang menggunakannya, halaman berikutnya akan lebih cepat untuk memuat (karena browser menyimpan salinan style sheet dan aturan tidak perlu diunduh untuk setiap halaman). Ini juga mengurangi ketegangan pada server (komputer yang mengirim halaman web ke orang yang melihat situs) karena halaman yang dikirim lebih kecil.
+                </li>
+                <li>
+                    Style sheet dapat bertindak sebagai template style untuk membantu penulis yang berbeda mencapai style sheet dokumen yang sama tanpa mempelajari semua pengaturan style individu.
+                </li>
+                <li>
+                    Karena halaman web tidak mengandung aturan gaya (style rules), berbagai style sheet dapat dilampirkan ke dokumen yang sama. Jadi, Anda dapat menggunakan dokumen HTML yang sama dengan satu style sheet saat viewer berada di komputer desktop, style sheet lain saat pengguna memiliki perangkat genggam (mobile), style sheet lain saat halaman sedang dicetak (print), style sheet lain saat halaman sedang dilihat di TV, dan sebagainya. Anda dapat menggunakan kembali dokumen yang sama dengan style sheet berbeda untuk kebutuhan pengunjung yang berbeda.
+                </li>
+                <li>
+                    Style sheet dapat mengimpor dan menggunakan style dari style sheet lain, memungkinkan untuk pengembangan modular dan penggunaan kembali yang baik.
+                </li>
+                <li>
+                    Jika style sheet dihapus, Anda dapat membuat situs lebih mudah diakses bagi mereka yang memiliki keterbatasan penglihatan karena Anda tidak lagi mengendalikan font dan skema warna.
+                </li>
+            </ul>
+        </li>
+        <p>
+            Oleh karena itu, cukup adil untuk mengatakan bahwa setiap kali Kita menulis seluruh situs, Anda harus menggunakan style sheet eksternal untuk mengontrol penyajiannya (daripada meletakkan aturan CSS di halaman web individual). 
+        </p>
+    </ol>        
+
+    <h4>1.4.1 Atribut rel</h4>
+    <p>
+        Atribut rel diperlukan dan menentukan hubungan antara dokumen (relationship) yang berisi tautan dan dokumen yang ditautkan. Nilai yang digunakan untuk bekerja dengan style sheet adalah stylesheet:
+    </p>
+
+    <h4>1.4.2 Atribut href</h4>
+    <p>
+        Atribut href menentukan URL untuk dokumen yang ditautkan :
+    </p>
+    <p class="center2">
+        media = "screen"
+    </p>
+    <p>
+        Meskipun atribut ini tidak selalu digunakan, ini penting karena orang mengakses Internet dengan cara yang berbeda menggunakan perangkat yang berbeda. Tabel 7-1 menunjukkan nilai yang mungkin. 
+    </p>
+
+    <table>
+        <tr>
+            <th>Nilai (value)</th>
+            <th>Penggunaan</th>
+        </tr>
+        <tr>
+            <td>screen</td>
+            <td>Layar komputer (seperti komputer desktop dan laptop)</td>
+        </tr>
+        <tr>
+            <td>tty</td>
+            <td>Media dengan kisi karakter pitch tetap, seperti teletype, terminal, atau perangkat portabel dengan kemampuan tampilan terbatas</td>
+        </tr>
+        <tr>
+            <td>Tv</td>
+            <td>Perangkat TV dengan resolusi rendah, layar warna, dan kemampuan terbatas untuk menggulir ke bawah halaman</td>
+        </tr>
+        <tr>
+            <td>print</td>
+            <td>Dokumen tercetak, yang kadang-kadang disebut media paged (dan dokumen ditampilkan di layar dalam mode pratinjau cetak (preview mode)</td>
+        </tr>
+        <tr>
+            <td>projection</td>
+            <td>Projector</td>
+        </tr>
+        <tr>
+            <td>handheld</td>
+            <td>Perangkat genggam, yang sering memiliki layar kecil, bergantung pada grafik yang dipetakan, dan memiliki bandwidth terbatas</td>
+        </tr>
+        <tr>
+            <td>braille</td>
+            <td>Perangkat umpan balik sentuhan Braille</td>
+        </tr>
+        <tr>
+            <td>embossed</td>
+            <td>Printer beranda Braille</td>
+        </tr>
+        <tr>
+            <td>speech</td>
+            <td>Penyintesis ucapan</td>
+        </tr>
+        <tr>
+            <td>all</td>
+            <td>Cocok untuk semua perangkat</td>
+        </tr>        
+    </table>
+
+    <br />
+
+    <h3>1.5 Komentar pada CSS</h3>
+    <p>
+        Sama seperti Bahasa pemograman lainnya komentar akan diberikan paa skrip untuk menjelaskan sesuatu. Komentar pada CSS hampir sama dengan komentar pada Bahasa C atau C++, yaitu menggunakan : 
+    </p>
+    <p class="center2">
+        /* isi komentar */
+    </p>
+    <p>Contoh: </p>
+    <p class="center2">
+        p {
+            color : red;    /* memberikan warna merah pada paragraf*/
+        }
+    </p>
+
+    <h3>1.6 Macam - macam Selector</h3>
+    <p>
+        Sebelum melanjutkan untuk melihat lebih banyak properti, Anda perlu melihat beberapa masalah yang lebih mendasar. Mulailah dengan melihat bagaimana Anda dapat menggunakan jenis selector yang berbeda untuk menentukan elemen mana yang menjadi aturan aturan style sheet. Sebenarnya ada beberapa cara untuk melakukan ini, tidak hanya dengan menggunakan nama elemen seperti yang telah Kita lihat sejauh ini dalam bab ini (yang, kebetulan, dikenal sebagai selector sederhana) atau menggunakan nilai atribut kelas atau atribut id. Pelajari caranya di beberapa bagian berikutnya.
+    </p>
+    <h4>1.6.1 Universal Selector</h4>
+    <p>
+        Selector universal adalah tanda bintang; itu seperti wildcard dan cocok dengan semua jenis elemen dalam dokumen.
+    </p>
+    <p class="center2">
+        * { }
+    </p>
+    <p>
+        Jika Anda ingin aturan diterapkan ke semua elemen, Anda dapat menggunakan selector ini. Kadang-kadang digunakan untuk nilai-nilai default yang berlaku untuk seluruh dokumen (seperti font-family dan ukuran font) kecuali selector lain yang lebih spesifik menunjukkan bahwa elemen harus menggunakan nilai yang berbeda untuk properti yang sama.
+        Ini sedikit berbeda dari menerapkan gaya default ke elemen <-body> karena pemilih universal berlaku untuk setiap elemen dan tidak bergantung pada properti yang diwarisi dari aturan yang berlaku untuk elemen <-body>.
+    </p>
+    <h4>1.6.2 Tag/Element HTML</h4>
+    <p>
+        Penggunaan tag yang terdapat pada HTML. Setiap tag yang ada dalam HTML dapat dijadikan sebagai selector. Contoh : 
+    </p>
+    <p class="center2">
+        h1 {color : red; }
+    </p>
+    <h4>1.6.3 Class Selector</h4>
+    <p>
+        Class selector memungkinkan Anda untuk mencocokkan aturan dengan yang membawa atrribute class yang nilainya cocok dengan yang Anda tentukan di class selector. 
+        Sebagai contoh, pada tag “<-p>” akan Kita tambahkan atribut class dengan nama isiteks seperti berikut :
+    </p>
+    <p class="center2">
+        <-p class=”isiteks”>ini adalah isiteks class paragraph<-/p> 
+    </p>
+    <p>
+        Penggunaan class selector akan diawali dengan tanda titik “.” Diawal penulisannya. Kita dapat menggunakan class selector dengan 2 (dua) cara. 
+    </p>
+    <ol>
+        <li>Kita dapat memberikan aturan penulisan CSS pada semua element yang memiliki atribut class “isiteks”.</li>
+        <li>Kita dapat memberikan aturan penulisan CSS hanya pada spesifik elemen yang sudah diberikan class tertentu saja</li>
+    </ol>
+    <h4>1.6.4 ID Selector</h4>
+    <p>
+        Hampir sama dengan class selector, ID selector bersifat unik dan dapat diterapkan untuk hampir semua tag HTML, tetapi penggunaanya hanya sekali dalam satu halaman untuk satu tag HTML tertentu. Penggunaan ID selector menggunakan awalan tanda pagar “#” untuk inisialisasi sebuah nama id yang sudah dibuat pada dokumen HTML.
+    </p>
+    <p>
+        Sekali lagi di tekankan selector ID digunakan hanya untuk 1 elemen pada satu
+        halaman web. Misalnya saja ID #footer diatas hanya digunakan sekali karena
+        dalam satu halaman web hanya ada 1 id footer. 
+    </p>
+    <h4>1.6.5 Child Selector</h4>
+    <p>
+        Child selector digunakan untuk mencocokkan semua elemen yang merupakan anak dari elemen yang ditentukan. Ini memberi hubungan antara dua elemen. Selector elemen > elemen memilih elemen yang merupakan anak-anak dari orang tua tertentu. Operan di sisi kiri “>” adalah induk dan operan di sebelah kanan adalah elemen anak-anak.
+    </p>
+    <h4>1.6.6 Descendant Selector</h4>
+    <p>
+        Selector Descendant digunakan untuk memilih semua elemen yang merupakan anak dari elemen (bukan elemen tertentu). Ini memilih elemen di dalam elemen yaitu menggabungkan dua penyeleksi sehingga elemen yang cocok dengan selector kedua dipilih jika mereka memiliki elemen leluhur yang cocok dengan selector pertama.
+    </p>
+    <h4>1.6.7 Adjacent Sibling Selector</h4>
+    <p>
+        Sebuah adjacent sibling selector digunanakan untuk memilih diantara 2 pasang selector dan dipilih yang kedua atau selanjutnya.
+        Jika, x, y dan z adalah tiga elemen HTML dan y dan z berada bersebelahan di dalam x, maka y dan z disebut sebagai adjacent sibling selector.
+        Saat menulis adjacent sibling selector, selector harus dipisahkan dengan kombinator "+".
+        Misalnya jika Anda ingin membuat paragraf pertama setelah setiap level 1 dengan gaya yang berbeda dari elemen <-p> lainnya, Anda dapat menggunakan adjacent sibling selector seperti itu untuk menentukan aturan untuk hanya elemen <-p> pertama yang muncul setelah setiap elemen <-h1>.
+        Jika Kita menemukan h2 kembali tanpa h1 pada paragraf lainnya maka mereka bukan adjacent sibling selector karena selector sebelumnya bukan h1.
+    </p>
+    <h4>1.6.8 General Sibling Selector</h4>
+    <p>
+        General sibling selector memilih semua elemen yang merupakan saudara kandung dari elemen yang ditentukan.
+        Contoh berikut memilih semua elemen <-p> yang merupakan saudara dari elemen <-div>:
+        Saat menulis general sibling selector selector harus dipisahkan dengan kombinator “~”
+    </p>
+</body>
+</html>

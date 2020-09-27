@@ -1,0 +1,78 @@
+.center {
+  text-align: center;
+  color: rgb(12, 238, 42);
+}
+
+.red {
+    color: red;
+    text-align: center;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.center2{
+    text-align: center;
+}
+
+.bg-bab1{
+    background-color: coral;
+}
+
+.bg-bab2{
+    background-color: palegreen;
+}
+
+.bg-bab3{
+    background-color: rgb(189, 65, 127);
+}
+
+.bg-bab4{
+    background-color: sandybrown;
+}
+
+.bg-bab5{
+    background-color: salmon;
+}
+
+.bg-bab6{
+    background-color: skyblue;
+}
+
+.bg-bab7{
+    background-color: tan;
+}
+
+.bg-bab8{
+    background-color: wheat;
+}
+
+table {
+    border-collapse: collapse;
+    padding: 10px;
+    border: 1px solid black;
+    border-spacing: 10px;
+}
+  
+table td, table th {
+    border: 1px solid black;
+}
+  
+table tr:first-child th {
+    border-top: 0;
+}
+  
+table tr:last-child td {
+    border-bottom: 0;
+}
+  
+table tr td:first-child,
+  table tr th:first-child {
+    border-left: 0;
+}
+  
+table tr td:last-child,
+  table tr th:last-child {
+    border-right: 0;
+}

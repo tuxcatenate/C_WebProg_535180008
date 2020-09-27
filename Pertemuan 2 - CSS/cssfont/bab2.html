@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body class="bg-bab2">
+    <h2>Font</h2>
+
+    <br />
+
+    <p>
+        Selanjutnya Kita akan mempelajari mengenai kontrol teks saya akan membagi menjadi 2 (dua) bab yang membahas mengenai kontrol teks ini. bab ini adalah bagian yang pertama yaitu kontrol teks yang langsung mempengaruhi font dan penampilannya. Misalnya huruf tebal, cetak miring dan ukuran teks.
+        Berikut adalah property font yang dapat mempengaruhi secara langsung (directly) pada sebuah font teks. 
+    </p>
+
+    <table>
+        <tr>
+            <th>Properti</th>
+            <th>Kegunaan</th>
+        </tr>
+        <tr>
+            <td>font</td>
+            <td>Memungkinkan Anda untuk menggabungkan beberapa properti berikut ini menjadi satu.</td>
+        </tr>
+        <tr>
+            <td>font-family</td>
+            <td>Menentukan jenis huruf atau keluarga font yang harus digunakan.</td>
+        </tr>
+        <tr>
+            <td>font-size</td>
+            <td>Menentukan ukuran font.</td>
+        </tr>
+        <tr>
+            <td>font-weight</td>
+            <td>Menentukan apakah font harus normal atau tebal.</td>
+        </tr>
+        <tr>
+            <td>font-style</td>
+            <td>Menentukan apakah font harus normal, miring, atau miring.</td>
+        </tr>
+        <tr>
+            <td>font-variant</td>
+            <td>Menentukan apakah font harus berukuran normal atau kecil.</td>
+        </tr>
+    </table>
+
+    <p>
+        Sebelum melihat properti ini secara detail, ada baiknya Anda memahami beberapa istilah kunci yang digunakan dalam tipografi.
+        Mungkin yang paling penting, font tidak sama dengan jenis huruf (typeface):   
+    </p>
+    <ul>
+        <li>jenis huruf (typeface) adalah keluarga font, seperti keluarga Arial.</li>
+        <li>Font adalah anggota spesifik keluarga itu, seperti huruf tebal 12 poin Arial.</li>
+    </ul>
+    <p>
+        Anda sering melihat istilah yang digunakan secara bergantian, tetapi perlu diperhatikan perbedaannya.
+        Typeface cenderung menjadi salah satu dari dua grup: font serif dan sans-serif. Font serif memiliki ikal tambahan pada huruf. Sebagai contoh, pada gambar dibawah ini, gambar pertama berisi serif di bagian atas huruf dan di bagian bawah huruf, sedangkan font sans-serif memiliki ujung lurus ke huruf, seperti pada contoh kedua.
+        Gaya umum ketiga dari jenis huruf adalah font serif monospace. Setiap huruf dalam font monospasi memiliki lebar yang sama, sedangkan font nonmonospasi memiliki lebar berbeda untuk huruf yang berbeda. (Misalnya, dalam font serif dan sans-serif, huruf l cenderung lebih sempit daripada huruf m.)
+        Font serif umumnya dianggap lebih mudah dibaca untuk sejumlah besar teks yang dicetak. Tetapi di Internet banyak orang menemukan font serif lebih sulit dibaca untuk waktu yang lama, terutama karena resolusi layar komputer tidak sebagus dokumen cetak, yang membuat font sans-serif yang kurang rinci lebih mudah dibaca.
+        Agar Anda dapat mempelajari properti yang memengaruhi font, sebagian besar contoh di bagian berikut menggunakan struktur yang serupa. Paragraf teks akan diulangi, dan setiap elemen <-p> membawa atribut kelas dengan nilai yang berbeda.
+    </p>
+    <p>
+        Anda kemudian dapat melihat bagaimana properti berbeda memengaruhi setiap elemen <-p> dengan menulis aturan terpisah untuk setiap paragraf. Anda dapat menggunakan nilai atribut kelas di pemilih CSS untuk membuat aturan yang berlaku hanya untuk satu elemen <-p> pada suatu waktu.
+    </p>
+
+    <h3>2.1 Properti font-family</h3>
+    <p>
+        Properti font-family memungkinkan Anda untuk menentukan jenis huruf yang harus digunakan untuk teks apa pun di dalam elemen yang diterapkan aturan CSS.
+        Saat memilih tipografi, Anda harus tahu bahwa tanpa menggunakan arahan @ font-face, browser hanya dapat menampilkan teks HTML dalam font yang Anda tentukan jika jenis huruf itu diinstal pada komputer itu. Jadi, jika Anda menentukan font seperti Futura atau Garamond, dan saya tidak memilikinya di komputer saya, saya akan melihat teks dalam font yang berbeda bukan yang Anda tentukan.
+        Inilah sebabnya, jika Anda melihat pilihan situs web, sebagian besar sangat bergantung pada pilihan kecil tipografi yang dipasang pada sebagian besar komputer yang mengakses web, khususnya Arial, Kurir / Kurir Baru, Georgia, Times / Times New Roman, dan Verdana . (Dari daftar ini, Arial dan Verdana sangat populer karena dianggap mudah dibaca secara online.)
+    </p>
+    <p>
+        Untuk membantu masalah, Anda dapat menentukan daftar tipografi sehingga jika pengguna tidak memiliki pilihan jenis huruf yang diinstal pada komputer mereka, browser dapat mencoba menampilkan teks dalam pilihan kedua atau ketiga. Setiap jenis huruf dalam daftar dipisahkan oleh koma, dan jika nama berisi spasi (seperti times new roman  atau courier new), Anda harus menempatkan nama jenis huruf dalam tanda kutip ganda (gambar 23
+        Anda mungkin memperhatikan bahwa setiap daftar tipografi pada contoh sebelumnya diakhiri dengan apa yang disebut nama font generik (sans-serif, serif, dan monospace). Gagasan di balik ini adalah bahwa setiap komputer akan memiliki font yang sesuai dengan salah satu dari lima grup font generik (sans-serif, serif, monospace, cursive, dan fantasy), dan jika tidak dapat menemukan tipografi yang telah Anda tentukan, dapat menggunakan pilihan font yang sesuai dengan grup font umum.
+        Berikut adalah beberapa nama font yang umum.
+    </p>
+
+    <table>
+        <tr>
+            <th>Nama Font Umum</th>
+            <th>Tipe font</th>
+            <th>Contoh</th>
+        </tr>
+        <tr>
+            <td>Serif</td>
+            <td>Font dengan serif</td>
+            <td>Times</td>
+        </tr>
+        <tr>
+            <td>Sans-serif</td>
+            <td>Font tanpa serif</td>
+            <td>Arial </td>
+        </tr>
+        <tr>
+            <td>Monospace</td>
+            <td>Font lebar fix</td>
+            <td>Courier </td>
+        </tr>
+        <tr>
+            <td>Cursive</td>
+            <td>Font yang meniru tulisan tangan </td>
+            <td>Comis sans </td>
+        </tr>
+        <tr>
+            <td>fantasy</td>
+            <td>Font dekoratif untuk judul dan sebagainya</td>
+            <td>Impact</td>
+        </tr>
+    </table>
+    <p>
+        Satu hal yang perlu dipertimbangkan ketika memilih daftar font adalah bahwa setiap font dapat memiliki ketinggian atau lebar yang berbeda, jadi Anda mungkin ingin memilih daftar font yang memiliki ukuran yang sama. 
+        (Kalau tidak, tata letak bisa terlihat berbeda dengan yang Anda harapkan.) Misalnya, Courier New cukup pendek dan lebar, jadi jika ini adalah pilihan pertama Anda, itu tidak baik untuk memiliki Dampak sebagai pilihan kedua karena Dampak cukup tinggi dan sempit.
+        Jika Anda ingin menggunakan jenis huruf tertentu, Anda harus banyak mencoba - coba dan mempelajari mengenai web font lebih mendalam lagi.
+    </p>
+
+    <h3>2.2 Properti font-size</h3>
+    <p>
+        Properti font-size digunakan untuk menentukan ukuran font. Biasanya nilai untuk property ini ditentukan dalam ukuran pixel (px). 
+        Namun Kita dapat memberikan nilai dengan banyak cara :  
+    </p>
+    <ul>
+        <li>Length : selain pixel ada beberapa satuan panjang lain yag dapat digunakan pada ukuran font.
+            px, em, ex, pt, in, cm, pc, mm, rem, vw, vh</li>
+        <li>Ukuran absolut : masing-masing nilai ini sesuai dengan ukuran tetap : 
+            xx-small, x-small, small, medium, large, x-large, xx-large</li>
+        <li>Ukuran relative : nilai ini relatif terhadap teks diseKitarnya : 
+            smaller, larger</li>
+        <li>Persentase : dihitung sebagai proporsi dari elemen induk : 
+            2%, 10%, 25% 100%</li>
+    </ul>
+
+    <h3>2.3 Properti font-weight</h3>
+    <p>
+        Property ini digunakan untuk membuat variasi font yang berbeda seperti cetak tebal dan cetak miring. Pada sebuah browser cenderung menggunakan sebuah algoritma untuk membuat versi font terlihat lebih tebal atau lebih tipis. Inilah tujuan dari property font-weight.
+        Nilai yang mungkin untuk font-weight adalah :  
+    </p>
+    <p class=center2>
+        normal bold bolder lighter 100 200 300 400 500 600 700 800 900
+    </p>
+
+    <h3>2.4 Properti font-style</h3>
+    <p>
+        Property ini digunakan untuk mengatur bentuk style pada font. Apakah secara normal, italic, atau oblique. Namun style bold tidak dikategorikan ke property font-style karena style bold dikategorikan ke property weight, hal ini berbeda dengan HTML.
+        Dalam tipografi, versi italic dari sebuah font biasanya akan menjadi versi font khusus berdasarkan kaligrafi, sedangkan versi oblique dari font akan mengambil versi normal font yang sudutnya dimiringkan.
+        Berikut adalah contoh penggunaan property font-style : 
+    </p>
+
+    <h3>2.5 Properti font-variant</h3>
+    <p>
+        Property ini untuk mengubah bentuk huruf yang tadinya berukuran kecil menjadi semuanya berbentuk huruf capital atau normal. 
+        Terdapat dua nilai pada property ini : normal dan small-caps.  
+    </p>
+</body>
+</html>

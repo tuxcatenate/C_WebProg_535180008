@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body class="bg-bab5">
+    <h2>Border</h2>
+
+    <br />
+
+    <p>
+        Properti Box model yang pertama adalah border. Berbeda dengan border pada HTML, border dalam CSS berdiri sendiri tanpa bantuan tabel. Salah satu kelebihan border salam CSS adalah Kita bisa memilih style yang beragam, selain itu Kita bisa mengatur bagian atas, bawah, kanan, dan kiri border dengan pengaturan yang berbeda.  
+    </p>
+
+    <h3>5.1 Properti Border</h3>
+    <p>
+        Properti border memungkinkan Kita menentukan bagaimana batas kotak yang mewakili elemen akan terlihat. Ada 3 (tiga) properti border yang dapat diubah :  
+    </p>
+    <ul>
+        <li>
+            border-color digunakan untuk mengatur warna pada border.
+        </li>
+        <li>
+            border-style digunakan untuk mengatur hiasan pada border dapat berupa solid, dashed, double line atau salah satu dari nilai yang mungkin lainnya.
+        </li>
+        <li>
+            border-width digunakan untuk mengatur lebar sebuah border.
+        </li>
+    </ul>
+
+    <h3>5.2 Properti border-width</h3>
+    <p>
+        Properti ini memungkinkan Kita untuk menentukan lebar dari sebuah border, biasanya ditentukan dalam satuan pixel (px). Nilai properti border-width tidak dapat menggunakan persentase, meskipun Kita dapat menggunakan absolut unit atau relative unit, atau salah satu dari nilai berikut : 
+    </p>
+    <ul>
+        <li>thin</li>
+        <li>medium</li>
+        <li>thick</li>
+    </ul>
+    <p>
+        Kita dapat mengubah lebar batas bagian bawah, kiri, atas, dan kanan kotak secara individual menggunakan properti berikut:
+    </p>
+    <ul>
+        <li>border-bottom-width</li>
+        <li>border-right-width</li>
+        <li>border-top-width</li>
+        <li>border-left-width</li>
+    </ul>
+
+    <h3>5.3 Properti border-style</h3>
+    <p>
+        Properti ini memungkinkan Kita untuk menentukan garis apa yang akan digunakan sebagai pembatas (border). Nilai default dari properti ini adalah “none” jadi tidak ada border yang akan ditampilkan secara otomatis. Berikut adalah nilai yang dapat digunakan pada border-style.
+    </p>
+    <table>
+        <tr>
+            <th>Nilai</th>
+            <th>Deskripsi</th>
+        </tr>
+        <tr>
+            <td>none</td>
+            <td>Tidak ada border (setara dengan border-width:0;)</td>
+        </tr>
+        <tr>
+            <td>solid</td>
+            <td>Border adalah garis solid tunggal.</td>
+        </tr>
+        <tr>
+            <td>dotted</td>
+            <td>Border adalah serangkaian titik.</td>
+        </tr>
+        <tr>
+            <td>dashed</td>
+            <td>Border adalah serangkaian garis pendek.</td>
+        </tr>
+        <tr>
+            <td>double</td>
+            <td>Border adalah dua garis solid, nilai properti border-width menciptakan jumlah dari dua garis dan ruang diantara mereka.</td>
+        </tr>
+        <tr>
+            <td>groove</td>
+            <td>Border tampak seolah-olah diukir kehalaman.</td>
+        </tr>
+        <tr>
+            <td>ridge</td>
+            <td>Border terlihat kebalikan dari groove.</td>
+        </tr>
+        <tr>
+            <td>inset</td>
+            <td>Border membuat kotak terlihat seperti tertanam di page.</td>
+        </tr>
+        <tr>
+            <td>outset</td>
+            <td>Border membuat kotak tampak seperti keluar kanvas.</td>
+        </tr>
+        <tr>
+            <td>hidden</td>
+            <td>Sama seperti none, kecuali dalam hal resolusi konflik untuk elemen tabel.</td>
+        </tr>
+    </table>
+    <p>
+        Kita dapat mengubah style batas bagian bawah, kiri, atas, dan kanan kotak secara individual menggunakan properti berikut: 
+    </p>
+    <ul>
+        <li>border-bottom-style</li>
+        <li>border-right- style</li>
+        <li>border-top- style</li>
+        <li>border-left- style</li>
+    </ul>
+
+    <h3>5.4 Properti border-color</h3>
+    <p>
+        Properti ini memungkinkan Kita untuk mengubah warna border diseKitar kotak.
+        Sintaks :   
+    </p>
+    <p class="center2">
+        Elemen { border-color : nilai valid warna; }
+    </p>
+    <p>
+        Nilai dapat digunakan menggunakan nilai valid warna pada css
+    </p>
+    <p class="red">
+        (hexadecimal, rgb, rgba,hsl,hsla, nama warna).
+    </p>
+    <p>
+        Kita dapat mengubah warna batas bagian bawah, kiri, atas, dan kanan kotak secara individual menggunakan properti berikut:
+    </p>
+    <ul>
+        <li>border-bottom-color</li>
+        <li>border-right-color</li>
+        <li>border-top-color</li>
+        <li>border-left-color</li>
+    </ul>
+    
+    <h3>5.5 Properti border (singkat)</h3>
+    <p>
+        Properti border memungkinkan Kita secara singkat menentukan warna, style dan lebar dalam satu properti.
+        Jika Kita menggunakan singkatan ini, nilainya tidak boleh memiliki apa pun (selain spasi) di antara mereka.
+        Contoh : 
+    </p>
+    <p class="red">
+        p { border : 4px solid red; }
+    </p>
+    <p>
+        Kita juga dapat menentukan warna, style, dan lebar garis secara terpisah untuk setiap sisi kotak dengan cara yang sama menggunakan properti ini:
+    </p>
+    <ul>
+        <li>border-bottom</li>
+        <li>border-right</li>
+        <li>border-top</li>
+        <li>border-left</li> 
+    </ul>
+</body>
+</html>

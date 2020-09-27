@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body class="bg-bab4">
+    <h2>Box Model</h2>
+    
+    <br />
+
+    <p>
+        Box model adalah konsep penting dalam CSS karena menentukan bagaimana elemen diposisikan dalam jendela browser. Karena CSS memperlakukan setiap elemen seolah-olah berada didalam sebuah kotak (box).
+        Properti box model yang penting dapat dilihat pada tabel dibawah ini : 
+    </p>
+    
+    <table>
+        <tr>
+            <th>Properti</th>
+            <th>Deskripsi</th>
+        </tr>
+        <tr>
+            <td>border</td>
+            <td>Bahkan jika Anda tidak dapat melihatnya, setiap kotak memiliki batas (border). Ini memisahkan tepi satu kotak dari kotak lain di seKitarnya.</td>
+        </tr>
+        <tr>
+            <td>margin</td>
+            <td>Margin adalah jarak antara batas kotak dan kotak di sebelahnya.</td>
+        </tr>
+        <tr>
+            <td>padding</td>
+            <td>Padding adalah ruang antara isi kotak dan perbatasannya</td>
+        </tr>
+    </table>
+
+    <p>
+        Kita dapat menggunakan CSS untuk secara individual mengontrol border, margin, dan padding di setiap sisi kotak. Kita dapat menentukan lebar, gaya garis, dan warna yang berbeda untuk setiap sisi batas kotak.
+        Sifat padding dan margin sangat penting dalam menciptakan apa yang oleh perancang disebut sebagai ruang putih (white space), ini adalah ruang di antara berbagai bagian halaman.
+        Misalnya, jika Kita memiliki kotak dengan batas hitam dan kotak berisi teks hitam, Kita tidak ingin teks menyentuh perbatasan karena akan membuat teks lebih sulit dibaca. Memberikan padding kotak membantu memisahkan teks dari garis di seKitar tepi.
+        Sementara itu, anggaplah Kita memiliki dua kotak di samping satu sama lain, keduanya berbatasan. Jika tidak ada margin di antara mereka, kotak akan bertemu satu sama lain, dan garis tempat kotak bertemu bisa terlihat lebih tebal daripada garis lainnya.
+    </p>
+
+    <h3>4.1 Ilustrasi box model</h3>
+    <p>
+        Untuk mengilustrasikan box model, Kita bisa menambahkan border pada setiap elemen dalam halaman web. 
+        Script css : setiap elemen memiliki border box masing-masing dan pada element <`h1> dan <`b> diberi warna abu-abu untuk membantu membedakan dari elemen lain. 
+    </p>
+    <p>
+        Pada buku lain yang membahas dasar HTML (Panduan Definitif untuk HTML5) dibahas mengenai perbedaan antara elemen blok dan elemen inline, perbedaan ini menjadi sangat penting ketika bekerja dengan CSS karena ia menentukan bagaimana setiap kotak ditampilkan. 
+    </p>
+</body>
+</html>
