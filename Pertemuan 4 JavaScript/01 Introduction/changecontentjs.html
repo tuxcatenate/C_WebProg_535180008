@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java Script Introduction</title>
+</head>
+
+<body>
+
+    <button type="button" onclick='document.getElementById("cGreeting").innerHTML = "Hello World!"'>Go</button>
+    <button type="button" onclick='document.getElementById("cGreeting2").innerHTML = "Hola World!"'>Press</button>
+    <button onclick="myFunction()">Change</button>
+
+    <p id="cGreeting">Change Content.</p>
+    <p id="cGreeting2">Change again.</p>
+    <p id="cGreeting3">Change with JS Function</p>
+
+    <script>
+        function myFunction(){
+            document.getElementById("cGreeting3").style.backgroundColor = "Red";
+        }
+
+    </script>
+
+</body>
+
+</html>
